@@ -1,4 +1,5 @@
 const removeFromArray = function(arr) {
+    const array = arr.splice()
 };
 removeFromArray()
 
