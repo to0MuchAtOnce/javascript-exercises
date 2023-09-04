@@ -1,7 +1,9 @@
-const sumAll = function(num1, num2) {
-//    for(let i=0; i<0; i++) {
-     return num1 + num2;
-//    } 
+const sumAll = function(arg1, arg2) {
+    let total = 0;
+    for(let i = arg1; i <= arg2; i++) {
+     total += i;
+   } 
+   return total;
 };
 
 // Do not edit below this line
