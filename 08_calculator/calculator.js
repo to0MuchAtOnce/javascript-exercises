@@ -12,14 +12,16 @@ const sum = function(num) {
   }  
   else if (Array.isArray(num) && num.length === 1) { 
     return num[0];
+  } else if (Array.isArray(num)) {
+    return num.reduce((prev, cur) => prev + cur, 0);
   } else {
     return 0;
-  };
+  }
 };
 
 const multiply = function(nums) {
   if (Array.isArray(nums)) {
-    return nums[0] * nums[1];
+    return nums.reduce((prev, curr) => prev * curr, 1);
   }
 }
 
@@ -27,8 +29,14 @@ const power = function(num1, num2) {
 	return Math.pow(num1, num2);
 };
 
-const factorial = function(num1, num2) {
-  
+const factorial = function(num) {
+  let ans = 1;
+  if(num === 0) {
+    return 1;
+  }
+  for (let i = 2; i <= num; i++)
+    ans = ans * i;
+  return ans;
 };
 
 // Do not edit below this line
