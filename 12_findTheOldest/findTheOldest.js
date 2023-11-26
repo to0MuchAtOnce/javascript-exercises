@@ -3,7 +3,6 @@ const findTheOldest = function (array) {
   return array.reduce((oldest, currentPerson) => {
     //
     const oldestAge = getAge(oldest.yearOfBirth, oldest.yearOfDeath);
-    console.log(oldestAge);
     const currentAge = getAge(
       currentPerson.yearOfBirth,
       currentPerson.yearOfDeath
